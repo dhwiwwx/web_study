@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jua', sans-serif;
+    --my-border: 2px solid #f00;
+    --main-color: #fff;
+    --sub-color: #e0e0e0;
+    --text-color: #303030;
+    --active-color: #5050ff;
+}
+ul,li{
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.content{
+    max-width: 1201px;
+    margin: 0 auto;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.item1{
+    min-height: 100px;
+    flex-basis: 1200px;
+    flex-grow: 1;
+    border: var(--my-border);
+}
+.smo>h1{
+    font-size: 50px;
+    text-align: center;
+}
+.item2{
+    min-height: 400px;
+    flex-basis: 1200px;
+    background-image: url(./img/포스트.png);
+}
+
+.item3{
+    min-height: 400px;
+    flex-basis: 590px;
+    border: var(--my-border);
+}
+.item3>h4{
+    text-align: center;
+    font-size: 30px;
+    color: red;
+}
+.news>li>a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+}
+.news>li>a:hover{
+    color: var(--active-color);
+}
+
+.item4{
+    min-height: 400px;
+    flex-basis: 590px;
+}
+.item5{
+    min-height: 100px;
+    flex-basis:100%;
+    flex-wrap: wrap;
+    border: var(--my-border);
+    border-radius: 4px ;
+}
+.symtoms{
+    display: flex;
+    align-items: center;
+}
+.symtoms>.img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    margin: 32px;
+}
+.symtoms>.img>img{
+    position: absolute;
+}
+
+.symtoms:nth-child(1)>.img>img, .symtoms:nth-child(3)>.img>img, .symtoms:nth-child(4)>.img>img{
+    height: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.symtoms:nth-child(2)>.img>img,.symtoms:nth-child(5)>.img>img, .symtoms:nth-child(6)>.img>img{
+    width: 100%;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.item6{
+    min-height: 00px;
+    flex-basis: 200px;
+    background-color: aliceblue;
+    border: var(--my-border);
+}
+.item6>img{
+    width: 400px;
+    height: 300px;
+}
+.item7{
+    box-sizing: border-box;
+    padding: 8px 16px;
+    width: 400px;
+    height: 300px;
+    border: var(--my-border);
+    font-size: 15px;
+    
+}
+.item7>h2{
+    color: red;
+    text-align: center;
+}
+.item8{
+    width: 360px;
+    height: 300px;
+    border: var(--my-border);
+    
+}
+.center>a>img{
+    width: 360px;
+    height: 150px;
+}
+.health>a>img{
+    width: 360px;
+}
+.footer{
+    min-height: 50px;
+    flex-basis:70%;
+    border: var(--my-border);
+}
+
+.foo{
+    text-align: center;
+}
+.footer1{
+    min-height: 50px;
+    flex-basis: 28%;
+    border: var(--my-border);
+}
+.facebook>a>img{
+    width: 30%;
+    height: 100px;
+    float: right;
+}
+.instar>a>img{
+width: 30%;
+height: 100px;
+}
